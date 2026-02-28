@@ -1,0 +1,73 @@
+# Airline Sentiment Research - Dependencies
+# Install with: pip install -r requirements.txt
+
+# ===========================================
+# CORE DATA PROCESSING
+# ===========================================
+pandas>=2.0.0
+numpy>=1.24.0
+sqlalchemy>=2.0.0
+scikit-learn>=1.2.0
+
+# ===========================================
+# DATA COLLECTION
+# ===========================================
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+kaggle>=1.5.0  # For Kaggle dataset downloads
+
+# ===========================================
+# DEEP LEARNING - FTA-LSTM
+# ===========================================
+torch>=2.0.0
+tqdm>=4.65.0
+
+# ===========================================
+# GRAPH NEURAL NETWORKS - Bipartite GNN
+# ===========================================
+# Note: Installation order matters for torch-geometric
+# Install PyTorch first, then:
+#   pip install torch-geometric
+#   pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-2.0.0+cpu.html
+# For GPU, replace +cpu with your CUDA version (e.g., +cu118)
+
+torch-geometric>=2.3.0
+# torch-scatter  # Install separately with correct CUDA version
+# torch-sparse   # Install separately with correct CUDA version
+
+# ===========================================
+# NLP & TEXT PROCESSING
+# ===========================================
+nltk>=3.8.0
+vaderSentiment>=3.3.2
+gensim>=4.3.0  # For Word2Vec embeddings (optional)
+
+# ===========================================
+# VISUALIZATION
+# ===========================================
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# ===========================================
+# REDDIT API (when approved)
+# ===========================================
+praw>=7.7.0
+
+# ===========================================
+# STATISTICAL TESTING
+# ===========================================
+scipy>=1.10.0
+statsmodels>=0.14.0
+
+# ===========================================
+# JUPYTER NOTEBOOKS (optional)
+# ===========================================
+jupyter>=1.0.0
+ipywidgets>=8.0.0
+
+# ===========================================
+# EXPERIMENT TRACKING (optional)
+# ===========================================
+# mlflow>=2.5.0
+# wandb>=0.15.0
